@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 14, 2024 at 10:26 PM
+-- Generation Time: Feb 18, 2024 at 10:06 AM
 -- Server version: 5.7.36
 -- PHP Version: 8.0.13
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `FullName`, `AdminEmail`, `UserName`, `Password`, `updationDate`) VALUES
-(1, 'Kumar Pandule', 'kumarpandule@gmail.com', 'admin', 'e6e061838856bf47e1de730719fb2609', '2021-06-28 16:06:08');
+(1, 'Admin', 'admin@gmail.com', 'admin', 'e6e061838856bf47e1de730719fb2609', '2024-02-18 09:25:46');
 
 -- --------------------------------------------------------
 
@@ -65,12 +65,6 @@ CREATE TABLE IF NOT EXISTS `tblauthors` (
 --
 
 INSERT INTO `tblauthors` (`id`, `AuthorName`, `creationDate`, `UpdationDate`) VALUES
-(1, 'Kumar Pandule', '2017-07-08 12:49:09', '2021-06-28 16:03:28'),
-(2, 'Kumar', '2017-07-08 14:30:23', '2021-06-28 16:03:35'),
-(3, 'Rahul', '2017-07-08 14:35:08', '2021-06-28 16:03:43'),
-(4, 'HC Verma', '2017-07-08 14:35:21', NULL),
-(5, 'R.D. Sharma ', '2017-07-08 14:35:36', NULL),
-(9, 'fwdfrwer', '2017-07-08 15:22:03', NULL),
 (10, 'McChris', '2024-02-14 21:32:29', NULL);
 
 -- --------------------------------------------------------
@@ -115,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `tblcategory` (
   `CreationDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `UpdationDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tblcategory`
@@ -188,11 +182,7 @@ CREATE TABLE IF NOT EXISTS `tblstudents` (
 --
 
 INSERT INTO `tblstudents` (`id`, `StudentId`, `FullName`, `EmailId`, `MobileNumber`, `Password`, `Status`, `RegDate`, `UpdationDate`) VALUES
-(1, 'SID002', 'Anuj kumar', 'anuj.lpu1@gmail.com', '9865472555', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-11 15:37:05', '2017-07-15 18:26:21'),
-(4, 'SID005', 'sdfsd', 'csfsd@dfsfks.com', '8569710025', '92228410fc8b872914e023160cf4ae8f', 0, '2017-07-11 15:41:27', '2017-07-15 17:43:03'),
-(8, 'SID009', 'test', 'test@gmail.com', '2359874527', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-11 15:58:28', '2017-07-15 13:42:44'),
 (9, 'SID010', 'Amit', 'amit@gmail.com', '8585856224', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-15 13:40:30', NULL),
-(10, 'SID011', 'Sarita Pandey', 'sarita@gmail.com', '4672423754', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-15 18:00:59', NULL),
 (11, 'SID012', 'Natuhwera', 'natu@gmail.com', '0773637000', '29d8fbcf628f7f15d6b3d75e78c4b33f', 1, '2024-02-14 21:41:20', NULL);
 COMMIT;
 
