@@ -7,7 +7,7 @@ if (isset($_POST['signup'])) {
 
 //Code for student ID
 
-    $StudentId = 'SID013';
+    $StudentId = 'SID'.rand(1000,9000);
     $fname = $_POST['fullanme'];
     $mobileno = $_POST['mobileno'];
     $email = $_POST['email'];

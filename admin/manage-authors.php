@@ -13,9 +13,7 @@ if (strlen($_SESSION['alogin']) == 0) {
         $query->execute();
         $_SESSION['delmsg'] = "Author deleted";
         header('location:manage-authors.php');
-
     }
-
 
     ?>
     <!DOCTYPE html>
